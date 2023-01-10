@@ -959,7 +959,9 @@ En este segundo ejemplo se procesa el archivo "location.csv", que se encuentra e
 23. Obtener el titulo de las películas que ha alquilado el cliente ‘Carrie Porter’ y las veces que ha alquilado cada película
 24. Obtener un listado de todos los clientes (nombre y apellidos) con el acumulado de pagos realizados
 25. Obtener el número de películas de cada categoria (category) alquiladas en España.
-26. Tenemos tres tablas:
+26. Encuentra todos los pagos de clientes (customer) que están por encima de la media de pagos.
+27. Reescribe la subquery anterior usando SQL Joins
+28. Tenemos tres tablas:
     - Students
     - Classes
     - StudentClass
@@ -1007,6 +1009,3 @@ SELECT 3,2
 UNION ALL
 SELECT 3,3;
 ```
-
-15. Encuentra todos los pagos de clientes (customer) que están por encima de la media de pagos.
-16. Reescribe la subquery anterior usando SQL Joins
