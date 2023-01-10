@@ -547,9 +547,6 @@ FROM Table1 t1
 NATURAL LEFT JOIN Table2 t2;
 ```
 
-### Ejercicio
-
-
 #### Joins con USING
 
 Simplifica la sintaxis donde las columnas tienen el mismo nombre, pueden utilizarse varias columnas
@@ -946,8 +943,8 @@ En este segundo ejemplo se procesa el archivo "location.csv", que se encuentra e
 - En verano los estudiantes pueden decidir no matricularse en ninguna clase
 
 Cuestiones:
-  14.1. Recupera todos los estudiantes que se han matriculado en clases.
-  14.2. Recupera todos los estudiantes que no se han matriculado en ninguna clase
+    14.1. Recupera todos los estudiantes que se han matriculado en clases.
+    14.2. Recupera todos los estudiantes que no se han matriculado en ninguna clase
 
 Tablas:
 
