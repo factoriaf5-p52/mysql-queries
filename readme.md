@@ -935,16 +935,16 @@ En este segundo ejemplo se procesa el archivo "location.csv", que se encuentra e
 12. Obtener un listado de todos los clientes (nombre y apellidos) con el acumulado de pagos realizados
 13. Obtener el número de películas de cada categoria (category) alquiladas en España.
 14. Tenemos tres tablas:
-    1.  Students
-    2.  Classes
-    3.  StudentClass
+    - Students
+    - Classes
+    - StudentClass
 
 - Un estudiante se puede matricular en un máximo de tres clases.
 - En verano los estudiantes pueden decidir no matricularse en ninguna clase
 
 Cuestiones:
-    14.1. Recupera todos los estudiantes que se han matriculado en clases.
-    14.2. Recupera todos los estudiantes que no se han matriculado en ninguna clase
+- Recupera todos los estudiantes que se han matriculado en clases.
+- Recupera todos los estudiantes que no se han matriculado en ninguna clase
 
 Tablas:
 
