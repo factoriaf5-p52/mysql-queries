@@ -1,4 +1,6 @@
-# Consultas
+# Consultas SQL
+
+_Utiliza la bbdd [sakila](https://dev.mysql.com/doc/sakila/en/sakila-installation.html) para las demostraciones y ejercicios._
 
 ### Consultas a una tabla
 La instrucción básica de las consultas es la selección **`SELECT`**.
@@ -921,20 +923,43 @@ En este segundo ejemplo se procesa el archivo "location.csv", que se encuentra e
 
 #### Ejercicios
 
-1. Realizar una consulta que retorne solo los diferentes amounts de la tabla payment menores de 10.
-2. Realizar una consulta que retorne los diferentes first_name de la tabla actor y cuantos registros hay en cada first_name.(es decir, cuantas 'Penelope', ‘John’, etc. existen en la tabla).
-3. Realizar un consulta que muestre cuantas 'Penelope' hay en la tabla actor
-4. Seleccionar el número de clientes (customer) que tiene  cada tienda (store).
-5. Obtener el número de alquileres (rental) que ha hecho el cliente (customer) Freddie Duggan.
-6. Obtener los títulos de películas que ha alquilado el cliente Freddie Duggan
-7. Obtener el nombre, apellido y país de todos los componentes del staff (tabla staff)
-8. Obtener el nombre, apellido y ciudad de todos los clientes (tabla customer) que hay en  España (country = ‘Spain’)
-9. Obtener el nombre, apellido, ciudad y número de alquileres (rental) de todos los usuarios en España.
-10. Obtener el acumulado, la media y el número de pagos recibidos (amount) por  tienda (store) a lo largo del año 2005
-11. Obtener el titulo de las películas que ha alquilado el cliente ‘Carrie Porter’ y las veces que ha alquilado cada película
-12. Obtener un listado de todos los clientes (nombre y apellidos) con el acumulado de pagos realizados
-13. Obtener el número de películas de cada categoria (category) alquiladas en España.
-14. Tenemos tres tablas:
+1.  Which actors have the first name 'Scarlett'
+2.  Which actors have the last name 'Johansson'
+3.  How many distinct actors last names are there?
+4.  Which last names are not repeated?
+5.  Which last names appear more than once?
+6.  Which actor has appeared in the most films?
+7.  Is 'Academy Dinosaur' available for rent from Store 1?
+    1.  Step 1: which copies are at Store 1?
+    2.  Step 2: pick an inventory_id to rent:
+8.  Insert a record to represent Mary Smith renting 'Academy Dinosaur' from Mike Hillyer at Store 1 today
+9.  When is 'Academy Dinosaur' due?
+    1.  Step 1: what is the rental duration?
+    2.  Step 2: which rental are we referring to -- the last one.
+    3.  Step 3: add the rental duration to the rental date.
+10. What is that average running time of all the films in the sakila DB?
+11. What is the average running time of films by category?
+12. Why does this query return the empty set?
+```sql
+    select * from film natural join inventory;
+```
+
+### bonus track
+
+13. Realizar una consulta que retorne solo los diferentes amounts de la tabla payment menores de 10.
+14. Realizar una consulta que retorne los diferentes first_name de la tabla actor y cuantos registros hay en cada first_name.(es decir, cuantas 'Penelope', ‘John’, etc. existen en la tabla).
+15. Realizar un consulta que muestre cuantas 'Penelope' hay en la tabla actor
+16. Seleccionar el número de clientes (customer) que tiene  cada tienda (store).
+17. Obtener el número de alquileres (rental) que ha hecho el cliente (customer) Freddie Duggan.
+18. Obtener los títulos de películas que ha alquilado el cliente Freddie Duggan
+19. Obtener el nombre, apellido y país de todos los componentes del staff (tabla staff)
+20. Obtener el nombre, apellido y ciudad de todos los clientes (tabla customer) que hay en  España (country = ‘Spain’)
+21. Obtener el nombre, apellido, ciudad y número de alquileres (rental) de todos los usuarios en España.
+22. Obtener el acumulado, la media y el número de pagos recibidos (amount) por  tienda (store) a lo largo del año 2005
+23. Obtener el titulo de las películas que ha alquilado el cliente ‘Carrie Porter’ y las veces que ha alquilado cada película
+24. Obtener un listado de todos los clientes (nombre y apellidos) con el acumulado de pagos realizados
+25. Obtener el número de películas de cada categoria (category) alquiladas en España.
+26. Tenemos tres tablas:
     - Students
     - Classes
     - StudentClass
